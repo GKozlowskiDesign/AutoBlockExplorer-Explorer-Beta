@@ -18,35 +18,6 @@ export default function Header() {
 
 
 
-  const [selectedColor, setSelectedColor] = React.useState("default")
-
-  const variants = ["solid", "bordered", "light", "flat", "faded", "shadow"];
-
-  const DropdownContent = ({variant, color}) => (
-    <Dropdown>
-      <DropdownTrigger>
-        <Button 
-          color={color}
-          variant={variant}
-          className="capitalize"
-        >
-          {variant}
-        </Button>
-      </DropdownTrigger>
-      <DropdownMenu 
-        aria-label="Dropdown Variants"
-        color={color} 
-        variant={variant}
-      >
-        <DropdownItem key="new">New file</DropdownItem>
-        <DropdownItem key="copy">Copy link</DropdownItem>
-        <DropdownItem key="edit">Edit file</DropdownItem>
-        <DropdownItem key="delete" className="text-danger" color="danger">
-          Delete file
-        </DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
-  )
 
 
   return (
@@ -65,7 +36,7 @@ export default function Header() {
             <DropdownTrigger>
               <Button
                 disableRipple
-                className="p-0 bg-transparent data-[hover=true]:bg-transparent flex"
+                className="p-0 bg-transparent data-[hover=true]:bg-transparent flex text-white"
                 endContent={icons.chevron}
                 radius="sm"
                 variant="light"
@@ -123,22 +94,22 @@ export default function Header() {
           </DropdownMenu>
         </Dropdown>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page">
+          <Link href="#" aria-current="page" className="text-white">
             Customers
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#" className="text-white">
             Integrations
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem className="hidden lg:flex text-white">
           <Link href="#">Login</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} color="primary" href="#" variant="flat" className="text-white">
             Sign Up
           </Button>
         </NavbarItem>

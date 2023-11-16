@@ -1,3 +1,11 @@
+
+@font-face {
+  font-family: 'MonumentExtends';
+  src: url('/Users/gkozlowski/Desktop/Part 2/part-2/public/assets/MonumentExtended-Regular.otf');
+  font-weight: 100, 200, 300, 400, 500, 600;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,6 +25,7 @@
 }
 
 body {
+
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
