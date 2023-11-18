@@ -10,21 +10,21 @@ const Gallery = () => {
                         
                         <div class="grid gap-4">
                             <div>
-                                <img
+                                <Image
                                 class="h-auto max-w-full rounded-lg"
                                 src="https://images.pexels.com/photos/10638654/pexels-photo-10638654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Turbo Guage"
                                 />
                             </div>
                             <div>
-                                <img
+                                <Image
                                 class="h-auto max-w-full rounded-lg"
                                 src="https://images.pexels.com/photos/4674330/pexels-photo-4674330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Audi Tail Lights"
                                 />
                             </div>
                             <div>
-                                <img
+                                <Image
                                 class="h-auto max-w-full rounded-lg"
                                 src="https://images.pexels.com/photos/9661350/pexels-photo-9661350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Audi Tail Lights"
@@ -35,21 +35,21 @@ const Gallery = () => {
 
                         <div class="grid gap-4">
                             <div>
-                                <img
+                                <Image
                                 class="h-auto max-w-full rounded-lg"
                                 src="https://images.pexels.com/photos/11700328/pexels-photo-11700328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Car Dashboard Blur"
                                 />
                             </div>
                             <div>
-                                <img
+                                <Image
                                 class="h-auto max-w-full rounded-lg"
                                 src="https://images.pexels.com/photos/9686487/pexels-photo-9686487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1s"
                                 alt="Audi Tail Lights"
                                 />
                             </div>
                             <div>
-                                <img
+                                <Image
                                 class="h-auto max-w-full rounded-lg"
                                 src="https://images.pexels.com/photos/16531647/pexels-photo-16531647/free-photo-of-car-with-an-open-hood.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Audi Dashboard"
@@ -59,21 +59,21 @@ const Gallery = () => {
 
                         <div class="grid gap-4">
                                 <div>
-                                    <img
+                                    <Image
                                     class="h-auto max-w-full rounded-lg"
                                     src="https://images.pexels.com/photos/9661335/pexels-photo-9661335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     alt="Car Dashboard Blur"
                                     />
                                 </div>
                                 <div>
-                                    <img
+                                    <Image
                                     class="h-auto max-w-full rounded-lg"
                                     src="https://images.pexels.com/photos/2974246/pexels-photo-2974246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     alt="Audi Tail Lights"
                                     />
                                 </div>
                                 <div>
-                                    <img
+                                    <Image
                                     class="h-auto max-w-full rounded-lg"
                                     src="https://images.pexels.com/photos/13711948/pexels-photo-13711948.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     alt="Audi Dashboard"
