@@ -8,29 +8,29 @@ const Footer = () => {
     return (
         
       <footer name="footer" className="bg-black text-white py-2 pt-64">
-        <div className="container mx-auto flex justify-between items-center pb-40 p-4">
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 mb-4">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 justify-between items-center pb-40 p-2">
+        <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 mb-4">
             <h2 className="text-xl font-bold">Company</h2>
             <ul className="mt-2">
-              <li className="mb-2"><a className="hover:text-blue-400 text-sm" href="#">About Us</a></li>
-              <li className="mb-2"><a className="hover:text-blue-400 text-sm" href="#">Careers</a></li>
-              <li className="mb-2"><a className="hover:text-blue-400 text-sm" href="#">Blog</a></li>
+              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">About</a></li>
+              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">Careers</a></li>
+              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">Blog</a></li>
             </ul>
           </div>
           <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 mb-4">
             <h2 className="text-xl font-bold">Resources</h2>
             <ul className="mt-2">
-              <li className="mb-2"><a className="hover:text-blue-400 text-sm" href="#">Docs</a></li>
-              <li className="mb-2"><a className="hover:text-blue-400 text-sm" href="#">API</a></li>
-              <li className="mb-2"><a className="hover:text-blue-400 text-sm" href="#">Support</a></li>
+              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">Docs</a></li>
+              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">API</a></li>
+              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">Support</a></li>
             </ul>
           </div>
           <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 mb-4">
             <h2 className="text-xl font-bold">Community</h2>
             <ul className="mt-2">
-              <li className="mb-2"><a className="hover:text-blue-400 text-sm"href="#">Forums</a></li>
-              <li className="mb-2"><a className="hover:text-blue-400 text-sm" href="#">Partners</a></li>
-              <li className="mb-2"><a className="hover:text-blue-400 text-sm" href="#">Developers</a></li>
+              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm"href="#">Forums</a></li>
+              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">Partners</a></li>
+              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">Developers</a></li>
             </ul>
           </div>
         </div>
@@ -51,7 +51,7 @@ const Footer = () => {
 
           <div className="col-span-2 justify-end pl-20 md:pl-72 mx-auto pb-2">
           <Link activeClass="active" to="header" smooth duration={900}>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10 rounded-3xl cursor-pointer hover:bg-blue-400 bg-blue-700 p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10 rounded-3xl shadow-2xl shadow-blue-500 cursor-pointer hover:bg-blue-400 bg-blue-700 p-2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
             </svg>
           </Link>

@@ -27,7 +27,7 @@ export default function App() {
 
 
     
-    <div className="w-full bg-gradient-to-b from-white to-blue-300 pt-4 grid grid-cols-3 p-6">
+    <div className="w-full bg-gradient-to-b from-white to-blue-300 pt-4 grid grid-cols-1 md:grid-cols-3 p-6">
         
 
         

@@ -23,7 +23,7 @@ const About = () => {
                         </div>  
                     </div>
 
-                    <div className="grid grid-cols-3 pt-4 p-20 mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-3 pt-4 p-4 md:p-20 mx-auto">
                     <div className="col-span-1">
                     <h1 className="text-2xl md:text-5xl text-blue-800 font-momumentextended">Vision</h1>
                     </div>
@@ -38,7 +38,7 @@ const About = () => {
                   </div>
                   <div className='grid grid-cols-1 pb-4 pt-4'>
                     <div className='col-span-1 mx-auto items-center text-center justify-center flex'>
-                        <h2 className='text-4xl font-Gruppo'>Key <span className='text-blue-800 font-semibold'>Features</span> 
+                        <h2 className='text-2xl md:text-4xl font-Gruppo'>Key <span className='text-blue-800 font-semibold'>Features</span> 
                         <br></br>Of AutoBlockExplorer</h2>
                     </div>
                 </div>
