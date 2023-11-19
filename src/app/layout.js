@@ -1,5 +1,6 @@
 import './globals.css'
 import localFont from 'next/font/local'
+import { NextUIProvider } from "@nextui-org/react";
 
 const monumentextended = localFont({
   src: [

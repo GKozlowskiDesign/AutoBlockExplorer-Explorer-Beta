@@ -1,9 +1,10 @@
 import Header from './components/Header';
-import Services from './components/Services'
 import About from './components/About';
 import Gallery from './components/Gallery'
 import Hero from './components/Hero'
 import Footer from './components/Footer';
+import Modal from './components/Modal';
+
 
 
 
@@ -24,7 +25,7 @@ export default function Home() {
       <div>
         <div>
           <About />
-          <Services />
+          <Modal />
           <Gallery />
   
           <Footer />

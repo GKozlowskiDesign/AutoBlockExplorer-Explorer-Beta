@@ -8,14 +8,14 @@ const About = () => {
   return (
         <section>
               <div id="about" className='flex flex-col w-full p-10 pb-20 bg-white'>
-                  <div className='h-1 bg-blue-700 my-2 w-11/12 justify-center flex mx-auto p-1'></div>
+                  <div className='h-1 bg-blue-700 my-1 w-full justify-center flex mx-auto p-0'></div>
 
                   <div className="grid grid-cols-1 md:grid-cols-1 border-blue-800">
                       <div  className="col-span-1 pt-4 justify-center items-center">
                         <div className="flex items-center justify-center p-6">
                           <img
-                          src="https://images.pexels.com/photos/17483874/pexels-photo-17483874/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-was-inspired-by-neural-networks-used-in-deep-learning-it-was-created-by-novoto-studio-as-part-of-the-visualising-ai-pr.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                          className="items-center w-full lg:w-11/12 rounded-md shadow-2xl mx-auto"
+                          src="./assets/Waves.png"
+                          className="items-center w-full rounded-md shadow-2xl mx-auto shadow-blue-500"
                           alt="Statue Of Liberty"
                           width={500}
                           height={50}
@@ -28,12 +28,20 @@ const About = () => {
                     <h1 className="text-2xl md:text-5xl text-blue-800 font-momumentextended">Vision</h1>
                     </div>
                     <div className="col-span-2 pr-2 md:pr-0">
-                    <p className="text-lg font-Gruppo">OpenAI is on everyone's lips, but this is not about their recent Chatbot but about a language model for transcribing audio they released back in September. </p>
+                    <p className="text-lg font-Gruppo font-montserrat">AutoBlockExplorer is a cutting-edge automobile community that harnesses the power of AI to assist car owners in working on their vehicles. With our advanced AI models tailored specifically to your vehicle, you can gain valuable insights, perform diagnostics, and access step-by-step guidance for repairs and maintenance. Join our vibrant futuristic community and revolutionize your car ownership experience.
+
+</p>
                     </div>  
                     </div>
 
 
                   </div>
+                  <div className='grid grid-cols-1 pb-4 pt-4'>
+                    <div className='col-span-1 mx-auto items-center text-center justify-center flex'>
+                        <h2 className='text-4xl font-Gruppo'>Key <span className='text-blue-800 font-semibold'>Features</span> 
+                        <br></br>Of AutoBlockExplorer</h2>
+                    </div>
+                </div>
                 </div>
         </section>
     )
