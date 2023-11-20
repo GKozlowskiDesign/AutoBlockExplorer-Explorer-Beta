@@ -4,7 +4,7 @@ import React from "react";
 import Image from 'next/image';
 const Gallery = () => {
   return (
-        <div name="gallery" className="grid grid-col-1 items-center pt-0 md:pb-20 mt-0 bg-gradient-to-b from-blue-300 via-blue-800 to-black  justify-center">
+        <div name="gallery" className="grid grid-col-1 items-center pt-0 md:pb-20 mt-0 bg-black  justify-center">
             <div class="w-full p-10">
                 <div class="grid grid-cols-1 gap-4 p-2">
                         
