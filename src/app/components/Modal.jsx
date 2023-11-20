@@ -9,12 +9,12 @@ export default function App() {
   const [modalContent, setModalContent] = React.useState("");
 
   const modalContents = [
-    "DIY Guidance",
-    "DIY Guidance",
-    "DIY Guidance",
-    "DIY Guidance",
-    "DIY Guidance",
-    "DIY Guidance",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
   ];
 
   const handleOpen = (content) => {
@@ -27,40 +27,61 @@ export default function App() {
 
 
     
-    <div className="w-full bg-gradient-to-b from-white to-blue-300 pt-4 grid grid-cols-1 md:grid-cols-3 p-6">
-        
+    <div className="mx-auto bg-gradient-to-b from-white to-blue-300 pt-4 pb-96">
 
-        
+      
+                  <video     
+                  autoPlay
+                  loop
+                  muted  src={"/Track.mp4"} className="absolute opacity-60 w-auto min-w-full min-h-full max-w-none"/>
+
+            <div className="mx-auto pt-4 grid grid-cols-1 md:grid-cols-3 p-60 mt-64">
+                    
+                    <div className='col-span-1 mx-auto items-center bg-gradient-to-tr from-gray-900 to-black 
+                    rounded-br-3xl rounded-md text-center z-10 grid grid-cols-1 shadow-2xl shadow-black border-r-4 border-black border-2'>
+                        <h2 className='text-2xl md:text-2xl font-Gruppo pt-6 w-3/4 mx-auto text-gray-800'>
+                          Key <span className='text-blue-800 font-semibold'>Features </span> 
+                        Of <br></br>AutoBlockExplorer</h2>
+                        <p className="text-md font-montserrat pb-6 w-4/5 mx-auto text-gray-600">
+                        AutoBlockExplorer is the driving force propelling state-of-the-art mobility 
+                        services, seamlessly connecting drivers, their data, innovative developers, 
+                        and manufacturers. We pioneer an expansive Internet of Things (IoT) network, 
+                        powered by user-owned devices, with its genesis in the realm of automobiles.
+
+                        </p>
+                    </div>
+                    
+
         {[
         'Enterprise Tools', 
         'Machine Learning', 
         'Hardware Devices ', 
         'Personalized Mechanic', 
         'Predicitive Maintenace',
-        'Community Builder'
-    ].map((index) => (
-        <div className="grid p-10 grid-cols-1 items-center justify-center mx-auto w-full">
-
-            
+        ].map((index) => (
         
-          <Button key={index} onClick={() => handleOpen(modalContents[index - 1])} 
-          className="grid grid-cols-1 w-full shadow-2xl shadow-sky-400 bg-gradient-to-br from-black to-blue-600 hover:border-blue-300 rounded-xl duration-300 cursor-pointer mb-4 pb-40 pt-10 mx-auto justify-center border border-black border-b-4 border-r-4">
-           <div className="my-auto cols-span-1  p-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-12  p-2 justify-center items-center mx-auto shadow-2xl text-white bg-blue-500 rounded-xl">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
-                        </svg>
+        <div className="grid p-10 grid-cols-1 items-center justify-center mx-auto w-full">
+            <Button key={index} onClick={() => handleOpen(modalContents[index - 1])} 
+            className="grid grid-cols-1 w-full shadow-2xl shadow-gray-900 bg-gradient-to-br from-black to-blue-600 hover:border-blue-300 
+            rounded-b-3xl duration-300 cursor-pointer mb-4 pb-40 pt-10 mx-auto justify-center border 
+            border-black border-b-4 border-r-4"
+            >
+            
+            <div className="my-auto cols-span-1  p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-12  p-2 justify-center items-center mx-auto shadow-2xl text-white bg-blue-500 rounded-xl">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+                </svg>
             </div>
 
             <div>
-            <h3 className='opacity-100 p-2 text-center justify-center text-md mx-auto text-white hover:opacity-100 duration-1000'
-            >{index}</h3>
-            </div>
-            
-            
-            
-             
+            <h3 className='opacity-100 p-2 text-center justify-center 
+            text-md mx-auto text-white hover:opacity-100 duration-1000'>
+            {index}
+            </h3>
+            </div>   
           </Button>
-          </div>
+
+        </div>
         ))}
       <Modal
         isOpen={isOpen}
@@ -85,6 +106,7 @@ export default function App() {
           )}
         </ModalContent>
       </Modal>
+      </div>
       </div>
   );
 }

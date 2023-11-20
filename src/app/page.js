@@ -11,7 +11,7 @@ import Modal from './components/Modal';
 export default function Home() {
   return (
 
-    <div className="w-full overflow-hidden bg-black">
+    <div className="w-full">
       <div className="w-full h-4 bg-blue-500 opactiy-80" />
 
       <div>
@@ -22,19 +22,17 @@ export default function Home() {
       <Hero />
       </div>
 
-      <div>
+    
         <div>
           <About />
           <Modal />
           <Gallery />
-  
+          <Footer />
         
         </div>
       
-      </div>
-      <div>
-      <Footer />
-      </div>
+    
+   
     </div>
 
   )
