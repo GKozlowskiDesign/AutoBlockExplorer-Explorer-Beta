@@ -27,15 +27,15 @@ export default function App() {
 
 
     
-    <div className="bg-gradient-to-b from-blue-200 to-blue-300 pb-20 md:pb-60">
+    <div className="bg-gradient-to-b from-blue-200 to-blue-300 pb-20 md:pb-20">
 
       
                   <video     
                   autoPlay
                   loop
-                  muted  src={"/Track.mp4"} className="absolute opacity-60 w-auto max-w-none hidden mb:block"/>
+                  muted  src={"/Track.mp4"} className="absolute opacity-60 w-full"/>
 
-            <div className="pt-20 md:pt-20 grid grid-cols-2 md:grid-cols-3 p-10 md:p-10 md:gap-4 mx-auto">
+            <div className="pt-80 md:pt-10 grid grid-cols-2 md:grid-cols-3 p-10 md:p-10 md:gap-4 mx-auto">
                     
 
         {[
@@ -47,7 +47,7 @@ export default function App() {
         'Enterprise'
         ].map((index) => (
         
-        <div className="grid p-2 grid-cols-1 items-center justify-center mx-auto w-full">
+        <div className="grid p-1 grid-cols-1 items-center justify-center mx-auto w-full">
             <Button key={index} onClick={() => handleOpen(modalContents[index - 1])} 
             className="grid grid-cols-1 w-full shadow-2xl shadow-gray-900 bg-gradient-to-t from-black to-blue-600  hover:border-blue-300 
             rounded-br-3xl rounded-t-md hover:ease-linear over:duration-700 cursor-pointer mb-4 md:pb-40 md:pt-10 pb-20 pt-4 mx-auto justify-center border 
@@ -62,7 +62,7 @@ export default function App() {
 
             <div>
             <h3 className='opacity-100 p-4 text-center justify-center
-            text-sm lg:text-sm mx-auto text-white hover:opacity-100 duration-1000 hidden md:block'>
+            text-sm lg:text-sm mx-auto text-white hover:opacity-100 duration-1000'>
             {index}
             </h3>
             </div>   
@@ -94,16 +94,7 @@ export default function App() {
         </ModalContent>
       </Modal>
 
-      <div className='col-span-2 md:col-span-3 pt-10 pb-4 mt-10 mx-auto w-full items-center z-10 bg-white
-                    rounded-br-3xl rounded-md text-center grid grid-cols-1 shadow-2xl shadow-black border-r-4 border-black border-2'>
-                        <h2 className='text-2xl md:text-2xl font-Gruppo pt-6 w-3/4 mx-auto text-gray-800'>
-                          ABE <span className='text-blue-800 font-semibold'>Features </span></h2>
-                        <p className="text-md font-montserrat pb-6 w-4/5 mx-auto text-gray-600">
-                        AutoBlockExplorer is the driving force propelling state-of-the-art mobility 
-                        services, seamlessly connecting drivers, their data, innovative developers, 
-                        and manufacturers. 
-                        </p>
-                    </div>
+     
       </div>
  
                     
