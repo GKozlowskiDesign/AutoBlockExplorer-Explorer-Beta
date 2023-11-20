@@ -27,15 +27,10 @@ export default function App() {
 
 
     
-    <div className="bg-gradient-to-b from-blue-200 to-blue-300 pb-20 md:pb-20">
+    <div className="z-20 pb-20 pt-0 md:pt-40 md:mt-20 md:mb-0 border-b-2 border-black bg-gradient-to-b from-blue-900 to-black rouned-b-3xl">
 
-      
-                  <video     
-                  autoPlay
-                  loop
-                  muted  src={"/Track.mp4"} className="absolute opacity-60 w-full"/>
 
-            <div className="pt-80 md:pt-10 grid grid-cols-2 md:grid-cols-3 p-10 md:p-10 md:gap-4 mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-3 p-10 md:p-10 md:gap-4 mx-auto">
                     
 
         {[
@@ -49,9 +44,9 @@ export default function App() {
         
         <div className="grid p-1 grid-cols-1 items-center justify-center mx-auto w-full">
             <Button key={index} onClick={() => handleOpen(modalContents[index - 1])} 
-            className="grid grid-cols-1 w-full shadow-2xl shadow-gray-900 bg-gradient-to-t from-black to-blue-600  hover:border-blue-300 
+            className="grid grid-cols-1 w-full shadow-2xl shadow-gray-900 bg-gradient-to-t from-black to-blue-900  hover:border-blue-300 
             rounded-br-3xl rounded-t-md hover:ease-linear over:duration-700 cursor-pointer mb-4 md:pb-40 md:pt-10 pb-20 pt-4 mx-auto justify-center border 
-            border-black border-b-4 border-r-4"
+            border-black border-b-4 border-r-2"
             >
             
             <div className="my-auto cols-span-1  p-2">
