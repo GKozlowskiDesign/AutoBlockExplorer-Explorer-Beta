@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 const Footer = () => {
     return (
         
-      <footer name="footer" className="bg-black text-white py-2 pt-96">
+      <footer name="footer" className="bg-black text-white py-2 pt-20 md:pt-96">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 justify-center items-center pb-20 p-2">
         
         </div>
@@ -15,14 +15,7 @@ const Footer = () => {
         <div className="mx-auto items-center justify-center p-14 grid grid-cols-6">
           <div className="col-span-4 justify-start">        
           <div className="justify-start">
-                                <Image
-                                className="justify-start mb-0 mr-2 hover:bg-indigo-700"
-                                src="/assets/logoABE.png"
-                                alt="AutoBlockExplorer-Logo"
-                                width={100}
-                                height={40}
-                                priority
-                                />
+                               <h4 className="text-3xl justify-start pr-20 mx-auto p-2 ">ABE</h4>
                         </div>
           </div>
 

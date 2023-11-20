@@ -27,15 +27,15 @@ export default function App() {
 
 
     
-    <div className="bg-blue-300 pb-60">
+    <div className="bg-gradient-to-b from-blue-200 to-blue-300 pb-20 md:pb-60">
 
       
                   <video     
                   autoPlay
                   loop
-                  muted  src={"/Track.mp4"} className="absolute opacity-60 w-auto max-w-none"/>
+                  muted  src={"/Track.mp4"} className="absolute opacity-60 w-auto max-w-none hidden mb:block"/>
 
-            <div className="pt-40 md:pt-20 grid grid-cols-2 md:grid-cols-3 p-10 md:p-10 md:gap-4 mx-auto">
+            <div className="pt-20 md:pt-20 grid grid-cols-2 md:grid-cols-3 p-10 md:p-10 md:gap-4 mx-auto">
                     
 
         {[
