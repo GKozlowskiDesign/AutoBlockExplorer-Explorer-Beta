@@ -21,7 +21,7 @@ export default function Header() {
 
 
   return (
-    <Navbar className="bg-gradient-to-tr from-blue-900 to-blue-900 pt-2 pb-2">
+    <Navbar className="bg-gradient-to-tr from-blue-900 to-blue-900 pt-4 pb-2">
       <NavbarBrand>
         <Image src="/assets/LogoABE.png"
         width={100}
