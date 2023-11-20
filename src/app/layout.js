@@ -3,6 +3,8 @@ import './globals.css'
 import localFont from 'next/font/local'
 
 
+
+
 const monumentextended = localFont({
   src: [
     {
@@ -22,6 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={ monumentextended.className}>{children}</body>
+  
     </html>
   )
 }

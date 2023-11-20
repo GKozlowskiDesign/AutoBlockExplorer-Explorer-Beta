@@ -11,6 +11,7 @@ const Hero = () => {
   justify-center  bg-gradient-to-b from-blue-900 via-gray-900 to-blue-900">
            <div className="absolute w-9/12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
            z-10  mb-96 mt-20 md:mb-40 md:mt-96">
+                       <p className="text-xs text-gray-400 md:text-white justify-center mt-2 flex">The platform that takes you places</p>
                 <h1 className="text-2xl md:text-5xl justify-center flex text-white p-2">AutoBlockExplorer</h1>
                 </div>
             <div className="cols-span-1 mt-10 pt-10 md:pt-0 md:mt-0"><video     
