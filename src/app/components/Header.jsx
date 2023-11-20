@@ -21,7 +21,7 @@ export default function Header() {
 
 
   return (
-    <Navbar className="bg-black pt-4 pb-2">
+    <Navbar className="bg-black pt-2 pb-2">
       <NavbarBrand>
         <Image src="/assets/LogoABE.png"
         width={100}
@@ -110,7 +110,7 @@ export default function Header() {
         </NavbarItem>
         <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="flat" className="text-white">
-            Sign Up
+            Connect
           </Button>
         </NavbarItem>
       </NavbarContent>

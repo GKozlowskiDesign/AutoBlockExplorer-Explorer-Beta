@@ -16,9 +16,9 @@ const Hero = () => {
                         <div className="w-full h-2 bg-sky-500    my-1.5 opacity-100"></div>
 
                 </div>
-                <div className="absolute w-9/12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                <div className="absolute w-9/12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 mt-10 md:mt-0">
                                 <Image
-                                className="z-10 w-full lg:w-1/2 mx-auto"
+                                className="z-10 w-full lg:w-1/2 mx-auto p-10 md:mb-4"
                                 src="/assets/NameABE.png"
                                 alt="Metaverse-Of-Things"
                                 width={600}

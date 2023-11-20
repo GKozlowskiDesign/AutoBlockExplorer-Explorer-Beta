@@ -27,43 +27,30 @@ export default function App() {
 
 
     
-    <div className="mx-auto bg-gradient-to-b from-white to-blue-300 pt-4 pb-96">
+    <div className="bg-blue-300 pb-60">
 
       
                   <video     
                   autoPlay
                   loop
-                  muted  src={"/Track.mp4"} className="absolute opacity-60 w-auto min-w-full min-h-full max-w-none"/>
+                  muted  src={"/Track.mp4"} className="absolute opacity-60 w-auto max-w-none"/>
 
-            <div className="mx-auto pt-4 grid grid-cols-1 md:grid-cols-3 p-60 mt-64">
-                    
-                    <div className='col-span-1 mx-auto items-center bg-gradient-to-tr from-gray-900 to-black 
-                    rounded-br-3xl rounded-md text-center z-10 grid grid-cols-1 shadow-2xl shadow-black border-r-4 border-black border-2'>
-                        <h2 className='text-2xl md:text-2xl font-Gruppo pt-6 w-3/4 mx-auto text-gray-800'>
-                          Key <span className='text-blue-800 font-semibold'>Features </span> 
-                        Of <br></br>AutoBlockExplorer</h2>
-                        <p className="text-md font-montserrat pb-6 w-4/5 mx-auto text-gray-600">
-                        AutoBlockExplorer is the driving force propelling state-of-the-art mobility 
-                        services, seamlessly connecting drivers, their data, innovative developers, 
-                        and manufacturers. We pioneer an expansive Internet of Things (IoT) network, 
-                        powered by user-owned devices, with its genesis in the realm of automobiles.
-
-                        </p>
-                    </div>
+            <div className="pt-40 md:pt-20 grid grid-cols-2 md:grid-cols-3 p-10 md:p-10 md:gap-4 mx-auto">
                     
 
         {[
-        'Enterprise Tools', 
-        'Machine Learning', 
-        'Hardware Devices ', 
-        'Personalized Mechanic', 
-        'Predicitive Maintenace',
+        'Software', 
+        'Hardware', 
+        'Infrastructure ', 
+        'Personalization', 
+        'Community',
+        'Enterprise'
         ].map((index) => (
         
-        <div className="grid p-10 grid-cols-1 items-center justify-center mx-auto w-full">
+        <div className="grid p-2 grid-cols-1 items-center justify-center mx-auto w-full">
             <Button key={index} onClick={() => handleOpen(modalContents[index - 1])} 
-            className="grid grid-cols-1 w-full shadow-2xl shadow-gray-900 bg-gradient-to-br from-black to-blue-600 hover:border-blue-300 
-            rounded-b-3xl duration-300 cursor-pointer mb-4 pb-40 pt-10 mx-auto justify-center border 
+            className="grid grid-cols-1 w-full shadow-2xl shadow-gray-900 bg-gradient-to-t from-black to-blue-600  hover:border-blue-300 
+            rounded-br-3xl rounded-t-md hover:ease-linear over:duration-700 cursor-pointer mb-4 md:pb-40 md:pt-10 pb-20 pt-4 mx-auto justify-center border 
             border-black border-b-4 border-r-4"
             >
             
@@ -74,8 +61,8 @@ export default function App() {
             </div>
 
             <div>
-            <h3 className='opacity-100 p-2 text-center justify-center 
-            text-md mx-auto text-white hover:opacity-100 duration-1000'>
+            <h3 className='opacity-100 p-4 text-center justify-center
+            text-sm lg:text-sm mx-auto text-white hover:opacity-100 duration-1000 hidden md:block'>
             {index}
             </h3>
             </div>   
@@ -106,7 +93,21 @@ export default function App() {
           )}
         </ModalContent>
       </Modal>
+
+      <div className='col-span-2 md:col-span-3 pt-10 pb-4 mt-10 mx-auto w-full items-center z-10 bg-white
+                    rounded-br-3xl rounded-md text-center grid grid-cols-1 shadow-2xl shadow-black border-r-4 border-black border-2'>
+                        <h2 className='text-2xl md:text-2xl font-Gruppo pt-6 w-3/4 mx-auto text-gray-800'>
+                          ABE <span className='text-blue-800 font-semibold'>Features </span></h2>
+                        <p className="text-md font-montserrat pb-6 w-4/5 mx-auto text-gray-600">
+                        AutoBlockExplorer is the driving force propelling state-of-the-art mobility 
+                        services, seamlessly connecting drivers, their data, innovative developers, 
+                        and manufacturers. 
+                        </p>
+                    </div>
       </div>
+ 
+                    
       </div>
+      
   );
 }

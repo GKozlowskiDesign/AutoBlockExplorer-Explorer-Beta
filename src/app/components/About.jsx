@@ -7,7 +7,7 @@ import Image from 'next/image';
 const About = () => {
   return (
         <section>
-              <div id="about" className='flex flex-col w-full p-10 pb-20 bg-white'>
+              <div id="about" className='flex flex-col w-full p-10 pb-10 bg-gradient-to-b from-white to-blue-200'>
                   <div className='h-1 bg-blue-700 my-1 w-full justify-center flex mx-auto p-0'></div>
 
                   <div className="grid grid-cols-1 md:grid-cols-1 border-blue-800">
@@ -15,7 +15,7 @@ const About = () => {
                         <div className="flex items-center justify-center p-6">
                           <img
                           src="./assets/Waves.png"
-                          className="items-center w-full lg:w-1/2 rounded-md shadow-2xl mx-auto shadow-blue-500"
+                          className="items-center w-full rounded-md shadow-2xl mx-auto shadow-blue-500"
                           alt="Statue Of Liberty"
                           width={500}
                           height={50}
@@ -23,7 +23,7 @@ const About = () => {
                         </div>  
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 w-full lg:w-1/2 pt-4 p-4 md:p-20 mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-3 w-full  pt-4 p-4 md:p-10 mx-auto">
                     <div className="col-span-1">
                     <h1 className="text-2xl md:text-5xl text-blue-800 font-momumentextended">Vision</h1>
                     </div>

@@ -7,35 +7,12 @@ import { Link } from "react-scroll";
 const Footer = () => {
     return (
         
-      <footer name="footer" className="bg-black text-white py-2 mt-96">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 justify-between items-center pb-40 p-2">
-        <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 mb-4">
-            <h2 className="text-xl font-bold">Company</h2>
-            <ul className="mt-2">
-              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">About</a></li>
-              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">Careers</a></li>
-              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">Blog</a></li>
-            </ul>
-          </div>
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 mb-4">
-            <h2 className="text-xl font-bold">Resources</h2>
-            <ul className="mt-2">
-              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">Docs</a></li>
-              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">API</a></li>
-              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">Support</a></li>
-            </ul>
-          </div>
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 mb-4">
-            <h2 className="text-xl font-bold">Community</h2>
-            <ul className="mt-2">
-              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm"href="#">Forums</a></li>
-              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">Partners</a></li>
-              <li className="mb-2"><a className="hover:text-blue-400 text-xs md:text-sm" href="#">Developers</a></li>
-            </ul>
-          </div>
+      <footer name="footer" className="bg-black text-white py-2 pt-96">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 justify-center items-center pb-20 p-2">
+        
         </div>
 
-        <div className="mx-auto items-center justify-center p-5 grid grid-cols-6">
+        <div className="mx-auto items-center justify-center p-14 grid grid-cols-6">
           <div className="col-span-4 justify-start">        
           <div className="justify-start">
                                 <Image
@@ -60,12 +37,12 @@ const Footer = () => {
             
           </div>
             <div className="border-t p-2">
-                <div className="container mx-auto flex justify-between items-center pb-20 p-2">
+                <div className="container mx-auto flex justify-between items-center pb-20 p-14">
                         <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 mb-4">
                             <ul className="mt-2">
-                            <li className="mb-1"><a className="hover:text-violet-400 text-sm" href="#">Terms</a></li>
-                            <li className="mb-1"><a className="hover:text-violet-400 text-sm" href="#">Policies</a></li>
-                            <li className="mb-1"><a className="hover:text-violet-400 text-sm" href="#">Guidelines</a></li>
+                            <li className="mb-1"><a className="hover:text-violet-400 text-xs" href="#">Terms</a></li>
+                            <li className="mb-1"><a className="hover:text-violet-400 text-xs" href="#">Policies</a></li>
+                            <li className="mb-1"><a className="hover:text-violet-400 text-xs" href="#">Guidelines</a></li>
                             </ul>
                         </div>
                         <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 mb-4"></div>

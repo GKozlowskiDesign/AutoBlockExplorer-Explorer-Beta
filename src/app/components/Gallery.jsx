@@ -4,11 +4,11 @@ import React from "react";
 import Image from 'next/image';
 const Gallery = () => {
   return (
-        <div name="gallery" className="grid grid-col-1 items-center md:h-screen pt-36 md:pt-20 md:pb-96 mt-0 bg-gradient-to-b from-blue-300 via-blue-800 to-black  justify-center">
-            <div class="w-full p-14">
+        <div name="gallery" className="grid grid-col-1 items-center pt-0 md:pb-20 mt-0 bg-gradient-to-b from-blue-300 via-blue-800 to-black  justify-center">
+            <div class="w-full p-10">
                 <div class="grid grid-cols-1 gap-4 p-2">
                         
-                        <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4 pb-40 mx-auto">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-4 pb-10 mx-auto">
                 
                             <div>
                                 <Image
