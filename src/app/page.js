@@ -12,12 +12,16 @@ import { useEffect } from 'react';
 
 
 export default function Home() {
-
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const loader = document.getElementById('globalLoader');
-      if (loader)
-        loader.remove();
+      
+      if (loader) {
+        // Delay the removal of the loader by 2000 milliseconds (2 seconds)
+        setTimeout(() => {
+          loader.remove();
+        }, 2200);
+      }
     }
   }, []);
   
