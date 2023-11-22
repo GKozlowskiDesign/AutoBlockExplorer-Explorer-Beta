@@ -2,19 +2,29 @@
 
 
 import React from "react";
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Link,  Card, CardHeader, CardBody, CardFooter, Divider } from "@nextui-org/react";
+import Image from "next/image";
 
 export default function App() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [modalContent, setModalContent] = React.useState("");
 
   const modalContents = [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
+
+    {
+      id: 1,
+      text: 'Download the ABE mobile app',
+      header: 'Start Earning Rewards From Driving'
+
+    },
+
+    {
+      id: 2,
+      text: 'Learn more about the ecosystem',
+      header: 'Your Gateway to Efficiency and Safety'
+
+    }
+    
   ];
 
   const handleOpen = (content) => {
@@ -27,44 +37,107 @@ export default function App() {
 
 
     
-    <div className="z-20 pb-20 pt-0 md:pt-40 md:mt-20 md:mb-0 border-b-2 border-black bg-gradient-to-b from-blue-900 to-black rouned-b-3xl">
+    <div className="z-20 lg:pt-20  border-b-2 border-black  bg-gradient-to-tr
+    from-gray-600 to-black rouned-b-3xl">
 
 
-            <div className="grid grid-cols-2 md:grid-cols-3 p-10 md:p-10 md:gap-4 mx-auto">
-                    
+      <div className="grid grid-cols-1 md:grid-cols-2 pb-20 pt-32">
+        <div className="grid grid-cols-2 mb-20 md:mb-0">
+        <div className="border-t-2 border-gray-500 rounded-tl-3xl w-11/12 mx-auto p-10">
+            <h3 className="justify-center flex text-xl md:text-3xl text-white mx-auto my-auto mt-10">About</h3></div>
+            <div className="border-t-2 border-gray-500 rounded-tr-3xl w-11/12 mx-auto p-10">
+            <h3 className="justify-center flex text-xl md:text-3xl text-white mx-auto my-auto mt-10">Vision</h3>
 
-        {[
-        'Software', 
-        'Hardware', 
-        'Infrastructure ', 
-        'Personalization', 
-        'Community',
-        'Enterprise'
-        ].map((index) => (
+          </div>
+        </div>
+        <div className="border-t-2 border-gray-500 rounded-tr-3xl w-11/12 mx-auto p-10">
+          <h3 className="justify-center pt-6 flex text-xl md:text-3xl text-white">Join thousands of other 
+        <br></br>Drivers on ABE</h3></div>
+
+
+
+      </div>
+    
+
+
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:gap-2 mx-auto">
+
         
-        <div className="grid p-1 grid-cols-1 items-center justify-center mx-auto w-full">
-            <Button key={index} onClick={() => handleOpen(modalContents[index - 1])} 
-            className="grid grid-cols-1 w-full shadow-2xl shadow-gray-900 bg-gradient-to-t from-black to-blue-900  hover:border-blue-300 
-            rounded-br-3xl rounded-t-md hover:ease-linear over:duration-700 cursor-pointer mb-4 md:pb-40 md:pt-10 pb-20 pt-4 mx-auto justify-center border 
-            border-black border-b-4 border-r-2"
+
+
+      {modalContents.map(({index, text, header}) => (
+        
+        <div className="grid grid-cols-1 w-full p-2">
+                <Card className="bg-gray-700 w-full mx-auto flex">
+                <Button key={index} onClick={() => handleOpen(modalContents[index - 1])} 
+            className=" overflow-visible rounded-br-3xl rounded-l-sm rounded-tr-sm 
+            hover:-translate-y-1 pt-4 pb-96 shadow-xl after:content-[''] 
+            after:absolute after:rounded-br-3xl after:rounded-l-sm after:rounded-tr-sm after:inset-0 after:bg-gray-500 
+            after:z-[-1] after:transition after:!duration-500 hover:after:trasition-120 hover:after:opacity-0
+            grid grid-cols-1"
             >
+
+<div className="grid grid-cols-1 pb-64">
+
+            <CardHeader className="gap-3 grid grid-cols-1">
+            {index}
+ 
+                <Image
+                  alt="nextui logo"
+                  height={100}
+                  radius="lg"
+                  src="/assets/AutoBlockLogo.png"
+                  width={100}
+                />
+
+            <div className="bg-transparent flex">
+            <h6 className="justify-start text-left text-gray-500 bg-white rounded-3xl text-xs p-2">AutoBlockExplorer</h6>
+            </div>
             
-            <div className="my-auto cols-span-1  p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-12  p-2 justify-center items-center mx-auto shadow-2xl text-white bg-blue-500 rounded-xl">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
-                </svg>
+            <div className="flex">
+            <h3 className='opacity-100 justify-start pt-2
+           text-xs md:text-lg break-words text-white hover:opacity-100 duration-1000'>
+            {header}
+            </h3>
             </div>
 
-            <div>
-            <h3 className='opacity-100 p-4 text-center justify-center
-            text-sm lg:text-sm mx-auto text-white hover:opacity-100 duration-1000'>
-            {index}
-            </h3>
-            </div>   
+            <div className="pt-32 pb-20 grid grid-cols-2">
+
+            <div className="bg-transparent flex">
+            <h6 className="justify-center text-center my-auto text-white text-xs">{text}</h6>
+            </div>
+
+            <div className="border-2 rounded-3xl mx-auto p-1.5 mb-40 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
+            stroke="currentColor" class="w-9 h-9 p-1 text-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+
+            </div>
+            </div>
+            </CardHeader>
+
+        </div>
+
+      <CardFooter>
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://github.com/nextui-org/nextui"
+        >
+          Visit source code on GitHub.
+        </Link>
+      </CardFooter>
+
+
           </Button>
+
+                </Card>
+     
 
         </div>
         ))}
+
       <Modal
         isOpen={isOpen}
         onClose={onClose}
@@ -72,7 +145,9 @@ export default function App() {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+             
+               <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+             
               <ModalBody>
                 <p>{modalContent}</p>
               </ModalBody>
@@ -91,9 +166,9 @@ export default function App() {
 
      
       </div>
+      </div>
  
                     
-      </div>
       
   );
 }

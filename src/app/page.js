@@ -1,10 +1,11 @@
 "use client"
 
-
 import Header from './components/Header';
 import Gallery from './components/Gallery'
 import Hero from './components/Hero'
 import Footer from './components/Footer';
+import About from './components/About';
+
 import Modal from './components/Modal';
 import { useEffect } from 'react';
 
@@ -20,7 +21,7 @@ export default function Home() {
         // Delay the removal of the loader by 2000 milliseconds (2 seconds)
         setTimeout(() => {
           loader.remove();
-        }, 2200);
+        }, 1800);
       }
     }
   }, []);
@@ -43,8 +44,8 @@ export default function Home() {
 
     
         <div>
+        <About />
         <Modal />
-        <Gallery />
 
           <Footer />
         

@@ -21,7 +21,7 @@ export default function Header() {
 
 
   return (
-    <Navbar className="bg-gradient-to-tr from-blue-900 to-blue-900 pt-4 pb-2">
+    <Navbar className="bg-transparent absolute md:absolute border-b-4 border-r-4 border-l-4 border-black">
       <NavbarBrand>
         <Image src="/assets/AutoBlockLogo.png"
         width={150}
@@ -32,11 +32,8 @@ export default function Header() {
       </NavbarBrand>
       
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex text-black">
-          <Link className="text-xs text-white" href="#">Login</Link>
-        </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat" className="text-white text-xs shadow-2xl shadow-blue-800 bg-blue-600 border-b-1 border-r-1 border-blue-400">
+          <Button as={Link} color="primary" href="#" variant="flat" className="text-white text-xs shadow-2xl shadow-blue-800 bg-black border-b-1 border-r-1 border-blue-400">
             Connect
           </Button>
         </NavbarItem>
