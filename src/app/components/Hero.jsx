@@ -7,12 +7,11 @@ const Hero = () => {
   const vidRef = useRef();
   useEffect(() => {vidRef.current.play(); }, []);
   return (
-        <div name="hero" className="grid grid-cols-1  items-center h-max lg:pb-40 md:h-max 
+        <div name="hero" className="grid grid-cols-1  items-center h-max pb-40 lg:pb-40 md:h-max 
   justify-center  md:bg-white">
-           <div className="absolute w-full">
-
-                </div>
-            <div className="cols-span-1 mb-0 lg:mb-48 lg:pb-20"><video     
+          
+            <div className="cols-span-1 mb-0 lg:mb-48 lg:pb-20">
+              <video     
                   autoPlay
                   ref={ vidRef }
                   playsInline
