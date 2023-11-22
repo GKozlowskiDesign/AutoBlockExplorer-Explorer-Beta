@@ -21,7 +21,7 @@ export default function Header() {
 
 
   return (
-    <Navbar className="bg-transparent absolute md:absolute border-b-4 border-r-4 border-l-4 border-black">
+    <Navbar id="header" className="bg-transparent absolute md:absolute border-b-4 border-r-4 border-l-4 border-black">
       <NavbarBrand>
         <Image src="/assets/AutoBlockLogo.png"
         width={150}

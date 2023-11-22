@@ -1,23 +1,35 @@
 'use client';
-
-
-import React from "react";
-import Image from 'next/image';
+import { useRef } from "react";
+import React, { useEffect } from "react";
 
 const About = () => {
+  const vidRef = useRef();
+  useEffect(() => {vidRef.current.play(); }, []);
   return (
-        <section>
-              <div id="about" className='relative flex flex-col w-full p-8  pt-20  md:mt-96 lg:mt-52  
-              md:bg-transparent border-r-4 border-black border-l-4'>
-                    <div className="grid grid-cols-1  w-full  pt-0 md:p-10 mx-auto ">
-                    <div className="col-span-1 md:w-full  flex justify-center">
-                    <h1 className="text-md md:text-5xl  mx-auto bg-gray-900  rounded-br-3xl md:border-0 
-                    border-2 p-2 border-black opacity-50 md:opacity-100
-                    justify-center md:justify-between text-white md:text-blue-600 
-                    font-momumentextended md:block hidden">AutoBlockExplorer</h1>
-                    </div>
-                    </div>
-                </div>
+        <section className="bg-white">
+              <div id="about" className='bg-white pb-10'>
+              <video     
+                  autoPlay
+                  ref={ vidRef }
+                  playsInline
+                  loop
+                  muted  src={"/DashboardCloseUp.mp4"} className="opacity-100 z-0 w-full border-black border-b-8 border-r-4 border-l-4 rounded-br-3xl"/>
+              </div>
+
+              <div className="grid grid-cols-1 pb-20">
+
+              <div className="p-10">
+                <h5 className="text-xs md:text-md"><span className="text-blue-600">ABE</span> Rewards</h5>
+                <h1 className="text-xl">Download the ABE app to get started</h1>
+              </div>
+
+
+              <ol className="list-decimal ps-10 space-y-4 list-inside p-4 text-xs md:text-md text-gray-900">
+              <li>Connect App to Car</li>
+              <li>Connect Cryptocurrency Wallet</li>
+              <li>Start Earning By Simply Driving</li>
+              </ol>
+              </div>
         </section>
     )
 };

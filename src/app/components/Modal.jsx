@@ -14,14 +14,14 @@ export default function App() {
     {
       id: 1,
       text: 'Download the ABE mobile app',
-      header: 'Start Earning Rewards From Driving'
+      header: 'Drive to Earn D2E'
 
     },
 
     {
       id: 2,
       text: 'Learn more about the ecosystem',
-      header: 'Your Gateway to Efficiency and Safety'
+      header: 'Your Gateway to Efficiency'
 
     }
     
@@ -37,22 +37,21 @@ export default function App() {
 
 
     
-    <div className="z-20 lg:pt-20  border-b-2 border-black  bg-gradient-to-tr
-    from-gray-600 to-black rouned-b-3xl">
+    <div className="relative border-b-2 border-t-4 border-gray-700  bg-gradient-to-tr
+    from-gray-600 to-black rouned-b-3xl rounded-t-3xl">
 
 
-      <div className="grid grid-cols-1 md:grid-cols-2 pb-20 pt-32">
-        <div className="grid grid-cols-2 mb-20 md:mb-0">
-        <div className="border-t-2 border-gray-500 rounded-tl-3xl w-11/12 mx-auto p-10">
-            <h3 className="justify-center flex text-xl md:text-3xl text-white mx-auto my-auto mt-10">About</h3></div>
-            <div className="border-t-2 border-gray-500 rounded-tr-3xl w-11/12 mx-auto p-10">
-            <h3 className="justify-center flex text-xl md:text-3xl text-white mx-auto my-auto mt-10">Vision</h3>
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 pb-20 pt-20 md:pt-20 lg:pt-20 ">
+        <div className="grid grid-cols-2 mb-20">
+        <div className="border-t-2 border-r-2 border-gray-500 rounded-tr-3xl rounded-tl-3xl w-11/12 mx-auto p-10">
+            <h3 className="justify-center flex text-xl md:text-2xl text-white mx-auto my-auto">About</h3></div>
+            <div className="border-t-2 border-l-2 border-gray-500 rounded-tl-3xl rounded-tr-3xl w-11/12 mx-auto p-10">
+            <h3 className="justify-center flex text-xl md:text-2xl text-white mx-auto my-auto">Vision</h3>
 
           </div>
         </div>
-        <div className="border-t-2 border-gray-500 rounded-tr-3xl w-11/12 mx-auto p-10">
-          <h3 className="justify-center pt-6 flex text-xl md:text-3xl text-white">Join thousands of other 
-        <br></br>Drivers on ABE</h3></div>
+        <div className="border-t-2  border-gray-500 rounded-t-3xl w-11/12 mx-auto p-10">
+          <h3 className="justify-center pt-6 flex text-xl md:text-4xl text-white">Join thousands of other Drivers on ABE</h3></div>
 
 
 
@@ -60,7 +59,7 @@ export default function App() {
     
 
 
-            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:gap-2 mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:gap-2 mx-auto mb-10">
 
         
 
@@ -68,7 +67,7 @@ export default function App() {
       {modalContents.map(({index, text, header}) => (
         
         <div className="grid grid-cols-1 w-full p-2">
-                <Card className="bg-gray-700 w-full mx-auto flex">
+                <Card className="bg-gray-700 w-11/12 mx-auto flex">
                 <Button key={index} onClick={() => handleOpen(modalContents[index - 1])} 
             className=" overflow-visible rounded-br-3xl rounded-l-sm rounded-tr-sm 
             hover:-translate-y-1 pt-4 pb-96 shadow-xl after:content-[''] 

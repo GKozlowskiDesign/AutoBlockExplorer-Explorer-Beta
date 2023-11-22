@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero'
 import Footer from './components/Footer';
 import About from './components/About';
+import Services from './components/Services'
 
 import Modal from './components/Modal';
 import { useEffect } from 'react';
@@ -30,7 +31,7 @@ export default function Home() {
 
   return (
 
-    <div className="w-full">
+    <div className="w-full bg-black">
 
 
       <div>
@@ -44,8 +45,9 @@ export default function Home() {
     
         <div>
         <Modal />
-
-          <Footer />
+        <About />
+        <Services />
+        <Footer />
         
         </div>
             <div id="globalLoader">
