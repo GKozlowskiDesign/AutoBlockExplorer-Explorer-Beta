@@ -14,7 +14,7 @@ const Hero = () => {
               <video     
                   autoPlay
                   ref={ vidRef }
-                  playsInline
+                  
                   loop
                   muted  src={"/Track.mp4"} className="absolute opacity-100 z-0 w-full border-black border-b-8 border-r-4 border-l-4 rounded-br-3xl"/>
                   </div>
