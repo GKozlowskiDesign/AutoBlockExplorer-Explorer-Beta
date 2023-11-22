@@ -20,8 +20,24 @@ export default function App() {
 
     {
       id: 2,
-      text: 'Learn more about the ecosystem',
-      header: 'Your Gateway to Efficiency'
+      text: 'Download the ABE Mobile App',
+      header: 'Test to Earn T2E'
+
+    },
+
+
+    {
+      id: 3,
+      text: 'Download the ABE Mobile App',
+      header: 'Contribute to Earn C2E'
+
+    },
+
+
+    {
+      id: 4,
+      text: 'Download the ABE Mobile App',
+      header: 'Create to Earn C2E'
 
     }
     
