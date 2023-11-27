@@ -20,7 +20,7 @@ export default function Header() {
         <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="flat" 
           className="font-monument-extended text-white text-xs shadow-2xl shadow-blue-800 
-         bg-blue-900 border-b-1 border-r-1 border-blue-400">
+          bg-gradient-to-tr from-blue-900 to-gray-900 border-b-1 border-r-1 border-blue-400">
             Connect
           </Button>
         </NavbarItem>

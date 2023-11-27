@@ -75,7 +75,7 @@ export default function App() {
                     className="flex bg-gray-400 rounded-br-3xl rounded-md"
                   />
                   <div className="bg-transparent flex">
-                    <h6 className="justify-start text-left text-blue-900 bg-blue-400 rounded-br-3xl rounded-md text-xs p-2 font-monument-extended">
+                    <h6 className="justify-start text-left text-white bg-blue-900 rounded-br-3xl rounded-md text-xs p-2 font-monument-extended">
                       Service
                     </h6>
                   </div>
@@ -84,7 +84,7 @@ export default function App() {
                   </div>
                   <div className="pt-32 pb-20 grid grid-cols-2">
                     <div className="bg-transparent flex">
-                      <h6 className="justify-center text-center my-auto text-white font-thin md:text-xl mx-auto">{text}</h6>
+                      <h6 className="justify-center text-center my-auto text-white font-thin md:text-xl mx-auto pb-10">{text}</h6>
                     </div>
                     <div className="border-2 rounded-3xl mx-auto p-1.5 mb-40 md:mb-0">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 p-1 text-white hover:text-blue-400">

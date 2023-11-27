@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="col-span-2 justify-end pl-20 md:pl-72 mx-auto pb-2">
           <Link activeClass="active" to="header" smooth duration={900}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
-            stroke="currentColor" className="w-10 h-10 animate-bounce  rounded-3xl shadow-2xl shadow-blue-500 cursor-pointer hover:bg-blue-400 bg-blue-600 p-2">
+            stroke="currentColor" className="w-10 h-10 animate-bounce  rounded-3xl shadow-2xl shadow-blue-500 cursor-pointer hover:bg-blue-400 bg-blue-900 p-2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
             </svg>
           </Link>
