@@ -4,10 +4,11 @@ import Header from './components/Header';
 import Hero from './components/Hero'
 import Footer from './components/Footer';
 import About from './components/About';
-import Services from './components/Services'
+import SplineModel from './components/SplineModel'
 
 import Modal from './components/Modal';
 import { useEffect } from 'react';
+import Social from './components/Social';
 
 
 
@@ -31,28 +32,30 @@ export default function Home() {
 
   return (
 
-    <div className="w-full bg-black">
+    <div className="w-full bg-transparent">
 
 
       <div>
       <Header />
       </div>
       
-      <div>
+      <div className='bg-blue-900'>
       <Hero />
       </div>
 
     
         <div>
         <Modal />
+        <SplineModel />
+
         <About />
-        <Services />
+        <Social />
         <Footer />
         
         </div>
             <div id="globalLoader">
-        <img src="/assets/AutoBlockLogo.png" alt="" />
-      </div>
+        <img src="/assets/AutoBlockLogo.png" className="animate-pulse flex space-x-4" alt=""></img>
+       </div>
     
    
     </div>
