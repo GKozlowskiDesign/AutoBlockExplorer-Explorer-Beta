@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-
+// Footer component definition
 const Footer = () => {
   return (
-    <footer name="footer" className="bg-black text-white py-2 md:pt-40 rounded-t-3xl">
-
+    <footer name="footer" className="bg-gradient-to-t from-blue-900 via-gray-900 to-black text-white py-2 md:pt-40 rounded-t-3xl">
       <div className="mx-auto items-center justify-center p-14 grid grid-cols-6">
         {/* Logo and brand */}
         <div className="col-span-4 justify-start">
@@ -51,4 +50,5 @@ const Footer = () => {
   );
 };
 
+// Export the Footer component
 export default Footer;
