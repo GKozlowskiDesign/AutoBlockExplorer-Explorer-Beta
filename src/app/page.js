@@ -1,6 +1,7 @@
 "use client"
 
 
+
 import React, { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -28,6 +29,7 @@ export default function Home() {
 
   return (
     <div className="w-full bg-transparent">
+
       {loading ? (
         <div id="globalLoader">
           <img src="/assets/AutoBlockLogo.png" className="animate-pulse flex space-x-4" alt="" />
@@ -51,6 +53,7 @@ export default function Home() {
           </div>
         </>
       )}
+
     </div>
   );
 }

@@ -3,7 +3,7 @@ import React from "react";
 import Spline from '@splinetool/react-spline';
 const SplineModel = () => {
   return (
-    <section name="spline" className="bg-gradient-to-b from-gray-900 via-black to-black text-white py-2 pt-20 md:pt-40 p-20 hidden md:block">
+    <section name="spline" className="bg-gradient-to-b from-gray-900 via-gray-950 to-black text-white py-2 pt-20 md:pt-40 p-20 hidden md:block">
       <div className="grid grid-cols-1 md:grid-cols-3">
         {/* Left Section */}
         <div className="cols-span-1 hidden md:block">

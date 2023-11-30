@@ -15,7 +15,7 @@ const About = () => {
 
   // Render the About component
   return (
-    <section className="bg-gradient-to-b from-black via-gray-900 to-blue-900 rounded-b-3xl shadow-2xl shadow-black">
+    <section className="bg-gradient-to-b from-black via-gray-950 to-blue-950 rounded-b-3xl shadow-2xl shadow-black border-b-8 border-black">
       <div id="about" className="bg-transparent pb-10">
         {/* Video Section */}
         <video
@@ -56,9 +56,9 @@ const About = () => {
 
           {/* List Section */}
           <ol className="ps-10 space-y-4 list-inside p-4 text-xs md:text-md text-gray-900">
-            <li className="text-white font-thin text-lg">Connect App to Car</li>
-            <li className="text-white font-thin text-lg">Connect Cryptocurrency Wallet</li>
-            <li className="text-white font-thin text-lg">Start Earning By Simply Driving</li>
+            <li className="text-white font-thin text-lg">1. Connect App to Car</li>
+            <li className="text-white font-thin text-lg">2. Connect Cryptocurrency Wallet</li>
+            <li className="text-white font-thin text-lg">3. Start Earning By Simply Driving</li>
           </ol>
         </div>
       </div>
