@@ -68,7 +68,7 @@ export default function App() {
 
   // Render the component
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:gap-2 mx-auto p-10 md:p-20 bg-gradient-to-b from-gray-950 via-gray-800 to-gray-900 rounded-b-3xl">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:gap-2 mx-auto p-10 md:p-20 bg-gradient-to-b from-gray-950 via-gray-800 to-gray-900 rounded-b-3xl md:rounded-none">
       {modalContents.map(({ id, text, header, title, body}) => (
         <div className="grid md:grid-cols-1 w-full p-2" >
           <Card className="bg-gray-700 w-full md:w-11/12 mx-auto flex">
