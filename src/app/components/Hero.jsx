@@ -14,32 +14,30 @@ const Hero = () => {
   return (
     <div
       name="hero"
-      className="grid grid-cols-1 items-center h-max pb-40 md:pb-96 md:mb-20 lg:pb-60 border-b-2 border-gray-700 rounded-b-3xl lg:mb-38 xl:mb-60 md:h-max justify-center bg-black md:bg-white"
+      className="grid grid-cols-1 items-center   border-b-2 border-gray-700  md:h-max  justify-center"
     >
       {/* Mobile view */}
-      <div className="mx-auto justify-center mb-4 flex md:hidden">
-        <div className="cols-span-1 h-screen p-10 pt-40 my-auto mx-auto justify-center">
-          <h1 className="text-white text-4xl font-monument-extended p-4 bg-transparent">
-            ABExplorer
-          </h1>
-    
-          <Spline scene="https://prod.spline.design/WZbqX91w2YHENZlr/scene.splinecode" />
-
-      
-        </div>
-      </div>
-
-      {/* Desktop view */}
-      <div className="cols-span-1 mb-0 lg:mb-48 hidden md:block">
+      <div className="mx-auto justify-center flex">
+      <div className="cols-span-1">
+      <video
+          autoPlay
+          ref={vidRef}
+          playsInline
+          loop
+          muted
+          src={"/WinterDriving2.mp4"}
+          className="opacity-100 z-0 w-full  mx-auto justify-center md:hidden"
+        />
         <video
           autoPlay
           ref={vidRef}
           playsInline
           loop
           muted
-          src={"/Track.mp4"}
-          className="absolute opacity-100 z-0 md:w-full lg:w-full"
+          src={"/WinterDriving.mp4"}
+          className="opacity-100 z-0 md:w-full  hidden md:block"
         />
+      </div>
       </div>
     </div>
   );

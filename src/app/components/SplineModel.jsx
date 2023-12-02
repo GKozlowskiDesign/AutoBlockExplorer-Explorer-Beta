@@ -3,7 +3,7 @@ import React from "react";
 import Spline from '@splinetool/react-spline';
 const SplineModel = () => {
   return (
-    <section name="spline" className="bg-gradient-to-b from-gray-900 via-gray-950 to-black text-white py-2 pt-20 md:pt-40 p-20 hidden md:block">
+    <section name="spline" className="bg-gradient-to-b from-gray-900 via-gray-950 to-black text-white py-2 pt-20 md:pt-40 p-20 hidden md:block rounded-b-3xl">
       <div className="grid grid-cols-1 md:grid-cols-3">
         {/* Left Section */}
         <div className="cols-span-1 hidden md:block">
@@ -37,6 +37,8 @@ const SplineModel = () => {
         {/* Middle Section */}
         <div className="cols-span-1 h-screen p-10 my-auto">
           {/* Spline 3D Scene */}
+          <h4 className="text-blue-400 font-raleway text-sm pb-4 mx-auto justify-center flex font-monument-extended">Reactive Mockup Coming Soon...</h4>
+
           <Spline scene="https://prod.spline.design/WZbqX91w2YHENZlr/scene.splinecode" />
         </div>
 
