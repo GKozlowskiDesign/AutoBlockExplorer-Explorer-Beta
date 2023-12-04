@@ -2,9 +2,16 @@
 // Import necessary modules and components
 import { useRef, useEffect } from "react";
 import Image from "next/image";
+import {Accordion, AccordionItem} from "@nextui-org/react";
+
 
 // About component definition
 const About = () => {
+  
+  const content =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+
+
   // Ref for the video element
   const vidRef = useRef();
 
@@ -19,44 +26,59 @@ const About = () => {
  
 
       {/* Content Section */}
-      <div className="grid grid-cols-1 bg-gradient-to-t from-gray-900 via-gray-900 to-blue-950 rounded-3xl border-t-4 border-b-4 border-black shadow-2xl shadow-gray-950" >
+      <div className="grid grid-cols-1 hidden bg-gradient-to-b from-gray-950 via-gray-800 to-gray-900 rounded-3xl border-t-4 border-b-4 border-black shadow-2xl shadow-gray-950" >
         {/* Text Section */}
-      <div className="cols-span-1 p-4 md:p-20">
-          <div className="p-10 md:p-2">
-          <h5 className="text-xs md:text-md font-monument-extended text-white">
-              <span className="text-blue-500">ABE</span> Project Overview.
-            </h5>
-            <h1 className="text-xl font-thin text-white mt-4">
-            ABE is the people-powered movement behind the next generation of mobility services. 
-            By connecting drivers and their data with developers and manufacturers, we’re building the largest, most useful IoT network of user-owned devices—starting with cars.
-            </h1>
-            <h5 className="text-xs md:text-md font-monument-extended text-white pt-10">
-              <span className="text-blue-500">Decentralized</span> Data-Driven ecosystem fuelled by an entire network of drivers.
-            </h5>
-            <h1 className="text-xl font-thin text-white mt-4">
-            ABE helps you get more from driving. 
-            Save money. Learn how to better take care of your car. 
-            And, contribute to a future where driving apps work for vehicle owners, not the companies that build them—just by sharing your data.
-        
-            ABE is an open-source, decentralized project. 
-            Anyone that’s part of the ABE community and holds $ATOB tokens 
-            - our network of drivers, developers, car hackers, and partners 
-            - has a say in the platform and a part to play in its future.
+        <div className='p-10 cols-span-1'>
+        <Accordion variant="splitted font-mono">
+                                      <AccordionItem key="1" aria-label="Accordion 4" title="Vision" className='bg-blue-950 font-monument-extended  p-2  mb-2 rounded-md
+                                      border-2 border-blue-700  hover:bg-blue-600 shadow-xl shadow-blue-900
+                                        '>
 
+                                            {content}
+                                        </AccordionItem>
 
-            </h1>
-          </div>        
-      </div>
+                                        <AccordionItem key="2" aria-label="Accordion 4" title="Mission" className=' bg-blue-950 font-monument-extended  p-2  mb-2 rounded-md
+                                        border-2 border-blue-700  hover:bg-blue-600 shadow-xl shadow-blue-900
+                                        '>
+                                        {content}
+                                        </AccordionItem>
+
+                                        <AccordionItem key="3" aria-label="Accordion 4" title="Company" className=' bg-blue-950 font-monument-extended  p-2  mb-2 rounded-md
+                                        border-2 border-blue-700  hover:bg-blue-600 shadow-xl shadow-blue-900
+                                        '>
+                                            {content}
+                                        </AccordionItem>
+
+                                        <AccordionItem key="4" aria-label="Accordion 4" title="Community" className=' bg-blue-950 font-monument-extended  p-2  mb-2 rounded-md
+                                        border-2 border-blue-700  hover:bg-blue-600 shadow-xl shadow-blue-900
+                                        '>
+                                            {content}
+                                        </AccordionItem>
+
+                                        <AccordionItem key="5" aria-label="Accordion 4" title="Developers" className=' bg-blue-950 font-monument-extended  p-2  mb-2 rounded-md
+                                        border-2 border-blue-700  hover:bg-blue-600 shadow-xl shadow-blue-900
+                                        '>
+                                            {content}
+                                        </AccordionItem>
+
+                                        <AccordionItem key="6" aria-label="Accordion 4" title="Drivers" className=' bg-blue-950 font-monument-extended  p-2  mb-2 rounded-md
+                                        border-2 border-blue-900  hover:bg-blue-600 shadow-xl shadow-blue-900
+                                        '>
+                                            {content}
+                                        </AccordionItem>
+
+                                        </Accordion>
+                    </div>
 
       </div>
 
 
 
  {/* Content Section */}
- <div className="grid grid-cols-1 md:grid-cols-2 pb-20 bg-gradient-to-tr from-blue-950 via-gray-900 to-black rounded-3xl border-t-4 border-b-4 border-black">
+ <div className="grid grid-cols-1 md:grid-cols-2 md:pb-20 bg-gradient-to-b from-gray-950 via-gray-800 to-gray-900 rounded-3xl border-t-4 border-b-4 border-black">
         {/* Text Section */}
-        <div className="cols-span-1 pt-20 p-4 md:p-20">
-          <div className="p-10 md:p-2">
+        <div className="cols-span-1 pt-10 p-4 md:p-20">
+          <div className="p-8 md:p-2">
             <h5 className="text-xs md:text-md font-monument-extended text-white">
               <span className="text-blue-500">ABE</span> Rewards
             </h5>
@@ -65,7 +87,7 @@ const About = () => {
             </h1>
           </div>
           {/* List Section */}
-          <ol className="ps-10 space-y-4 list-inside p-4 text-xs md:text-md text-gray-900">
+          <ol className="ps-10 space-y-2 list-inside p-1 md:p-4 text-xs md:text-md text-gray-900">
             <li className="text-white font-thin text-lg">1. Connect App to Car</li>
             <li className="text-white font-thin text-lg">2. Connect Cryptocurrency Wallet</li>
             <li className="text-white font-thin text-lg">3. Start Earning By Simply Driving</li>
@@ -73,7 +95,7 @@ const About = () => {
       </div>
 
 
-        <div id="about" className="bg-transparent p-20 w-10/12 justify-center flex mx-auto">
+        <div id="about" className="bg-transparent pb-10 md:p-20 w-10/12 justify-center flex mx-auto">
         {/* Video Section */}
         <video
           autoPlay

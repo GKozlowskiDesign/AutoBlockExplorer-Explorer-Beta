@@ -9,6 +9,7 @@ import About from './components/About';
 import SplineModel from './components/SplineModel';
 import Modal from './components/Modal';
 import Social from './components/Social';
+import Navigation from './components/Navigation';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -27,7 +28,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-full bg-transparent">
+    <div className="w-full bg-gradient-to-br from-gray-950 to-blue-900">
 
       {loading ? (
         <div id="globalLoader">
@@ -39,6 +40,7 @@ export default function Home() {
           </div>
           
           <div className='bg-transparent'>
+            <Navigation />
             <Hero />
             <Modal />
             <SplineModel />

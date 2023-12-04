@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 // Footer component definition
 const Footer = () => {
   return (
-    <footer name="footer" className="z-10 -my-20 bg-gradient-to-b from-blue-900 via-gray-900 to-gray-950 border-t-8 border-black text-white py-2 md:pt-40 rounded-t-3xl">
+    <footer name="footer" className="z-10 -my-20 bg-gradient-to-b from-gray-950 via-gray-800 to-gray-900 border-t-8 border-black text-white py-2 md:pt-40 rounded-t-3xl">
       <div className="mx-auto items-center justify-center p-14 grid grid-cols-6">
         {/* Logo and brand */}
         <div className="col-span-4 justify-start">

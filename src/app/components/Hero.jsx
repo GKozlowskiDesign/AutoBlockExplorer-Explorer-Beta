@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <div
       name="hero"
-      className="grid grid-cols-1 items-center   border-b-2 border-gray-700  md:h-max  justify-center"
+      className="grid grid-cols-1 items-center  border-b-2 border-gray-700  h-max md:h-max  justify-center"
     >
       {/* Mobile view */}
       <div className="mx-auto justify-center flex">
@@ -26,7 +26,7 @@ const Hero = () => {
           loop
           muted
           src={"/WinterDriving2.mp4"}
-          className="opacity-100 z-0 w-full  mx-auto justify-center md:hidden"
+          className="opacity-100 z-0 w-full -my-36  mx-auto justify-center md:hidden"
         />
         <video
           autoPlay
