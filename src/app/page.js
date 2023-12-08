@@ -6,9 +6,10 @@ import React, { useEffect, useState } from 'react';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import About from './components/About';
-import SplineModel from './components/SplineModel';
+import Spline from './components/SplineModel';
 import Modal from './components/Modal';
 import Navigation from './components/Navigation';
+import Image from 'next/image';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -31,7 +32,7 @@ export default function Home() {
 
       {loading ? (
         <div id="globalLoader">
-          <img src="/assets/AutoBlockLogo.png" className="animate-pulse flex space-x-4" alt="" />
+          <Image src="/assets/ABExplorer.png" width={100} height={100} className="animate-pulse flex space-x-4" alt="ABExplorer" />
         </div>
       ) : (
         <>
@@ -43,6 +44,7 @@ export default function Home() {
             <Hero />
             <Modal />
             <About />
+            <Spline />
 
             <Footer />
           </div>

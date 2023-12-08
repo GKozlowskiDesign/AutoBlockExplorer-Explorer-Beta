@@ -15,7 +15,7 @@ const About = () => {
 
 
 
-    <div className="w-full bg-gradient-to-b from-blue-900 via-gray-800 to-gray-950 grid grid-cols-1 md:grid-cols-2 p-10 md:p-20">
+    <div className="w-full bg-gradient-to-b from-blue-900 via-gray-800 to-gray-900 grid grid-cols-1 md:grid-cols-2 p-10 md:p-20">
 
 
       <div className="cols-span-1 w-full md:w-11/12 mx-auto">
@@ -27,7 +27,7 @@ const About = () => {
 \      </div>
 
 
- <div className="mb-80 w-full p-10 mx-auto grid grid-cols-1 bg-gradient-to-tr from-gray-900 to-black rounded-3xl border-2  border-blue-400 shadow-2xl shadow-blue-900">
+ <div className="mb-40 w-full p-10 mx-auto grid grid-cols-1 bg-gradient-to-tr from-gray-900 to-black rounded-3xl border-2  border-blue-400 shadow-2xl shadow-blue-900">
         {/* Text Section */}
         <div className="cols-span-1 mt-4  mx-auto justify-center flex">
 
