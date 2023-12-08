@@ -8,7 +8,6 @@ import Footer from './components/Footer';
 import About from './components/About';
 import SplineModel from './components/SplineModel';
 import Modal from './components/Modal';
-import Social from './components/Social';
 import Navigation from './components/Navigation';
 
 export default function Home() {
@@ -43,9 +42,8 @@ export default function Home() {
             <Navigation />
             <Hero />
             <Modal />
-            <SplineModel />
             <About />
-            <Social />
+
             <Footer />
           </div>
         </>

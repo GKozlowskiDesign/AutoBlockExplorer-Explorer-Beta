@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <div
       name="hero"
-      className="grid grid-cols-1 items-center  border-b-2 border-gray-700  h-max md:h-max  justify-center"
+      className="grid grid-cols-1 items-center  h-max md:h-max  justify-center"
     >
       {/* Mobile view */}
       <div className="mx-auto justify-center flex">
