@@ -3,7 +3,7 @@ import React from "react";
 import Spline from '@splinetool/react-spline';
 const SplineModel = () => {
   return (
-    <section name="spline" className="shadow-2xl shadow-gray-900 bg-gradient-to-b from-gray-900 via-blue-950 to-gray-950 text-white py-2 pt-20 pb-20 md:pt-20 p-10 md:p-20">
+    <section name="spline" className="shadow-2xl shadow-gray-900 bg-gradient-to-b from-black via-blue-950 to-gray-950 text-white py-2 pt-20 pb-20 md:pt-20 p-10 md:p-20 hidden md:block">
       <div className="grid grid-cols-1">
       <h1 className="text-white font-raleway text-4xl font-monument-extended mx-auto text-center">The best connected <br />vehicle experience.</h1>
 
@@ -12,7 +12,7 @@ const SplineModel = () => {
         {/* Left Section */}
         <div className="cols-span-1">
       
-          <div className="grid grid-cols-1 md:p-10 pt-10 text-xs md:text-md gap-20 font-monument-extended">
+          <div className="grid grid-cols-1 md:p-10 pt-10 text-xs md:text-md gap-2 md:gap-14 font-monument-extended">
             {/* Repeat your buttons or content */}
             {/* Example button */}
             <div className="bg-gray-950 border-2 border-blue-400 shadow-md shadow-blue-800 hover:bg-blue-900 cursor-pointer rounded-md rounded-bl-3xl flex p-4 justify-center">
@@ -45,7 +45,7 @@ const SplineModel = () => {
         </div>
 
         <div className="cols-span-1">
-        <div className="grid grid-cols-1 md:p-10 pt-10 text-xs md:text-md gap-20 font-monument-extended">
+        <div className="grid grid-cols-1 md:p-10 pt-10 text-xs md:text-md gap-2 md:gap-14 font-monument-extended">
             {/* Repeat your buttons or content */}
             {/* Example button */}
             <div className="bg-gray-950 border-2 border-blue-400 shadow-md shadow-blue-800 hover:bg-blue-900 cursor-pointer rounded-md rounded-br-3xl flex p-4 justify-center">

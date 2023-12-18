@@ -10,6 +10,7 @@ import Spline from './components/SplineModel';
 import Modal from './components/Modal';
 import Navigation from './components/Navigation';
 import Image from 'next/image';
+import X2Earn from './components/X2Earn';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -44,8 +45,8 @@ export default function Home() {
             <Hero />
             <Modal />
             <About />
+            <X2Earn />
             <Spline />
-
             <Footer />
           </div>
         </>

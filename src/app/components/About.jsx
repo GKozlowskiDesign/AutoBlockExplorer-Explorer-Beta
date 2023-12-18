@@ -27,7 +27,7 @@ const About = () => {
 \      </div>
 
 
- <div className="mb-40 w-full p-10 mx-auto grid grid-cols-1 bg-gradient-to-tr from-gray-900 to-black rounded-3xl border-2  border-blue-400 shadow-2xl shadow-blue-900">
+ <div className="mb-4 md:mb-40 w-full p-10 mx-auto grid grid-cols-1 bg-gradient-to-tr from-gray-900 to-black rounded-3xl border-2  border-blue-400 shadow-2xl shadow-blue-900">
         {/* Text Section */}
         <div className="cols-span-1 mt-4  mx-auto justify-center flex">
 
@@ -51,7 +51,7 @@ const About = () => {
           <ol className="space-y-2 p-0 md:p-4 text-xs md:text-md text-gray-900">
             <li className="text-white font-thin md:text-lg"><span className="mr-2 font-bold text-blue-400 text-xs md:text-sm font-monument-extended">Step 1</span> Create ABExplorer Account</li>
             <li className="text-white font-thin md:text-lg"><span className="mr-2 font-bold text-blue-400 text-xs md:text-sm font-monument-extended">Step 2</span>Authenticate Yourself</li>
-            <li className="text-white font-thin md:text-lg"><span className="mr-2 font-bold text-blue-400 text-xs md:text-sm font-monument-extended">Step 3</span>Contribute Data or Documents</li>
+            <li className="text-white font-thin md:text-lg"><span className="mr-2 font-bold text-blue-400 text-xs md:text-sm font-monument-extended">Step 3</span>Contribute Your Data</li>
             <li className="text-white font-thin md:text-lg"><span className="mr-2 font-bold text-blue-400 text-xs md:text-sm font-monument-extended">Step 4</span>Collect Rewards Earned</li>
 
           </ol>
