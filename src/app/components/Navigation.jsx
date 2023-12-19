@@ -38,7 +38,7 @@ export default function Navigation() {
       <NavbarContent>
       <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden ml-32 text-white"
+          className="hidden ml-32 text-white"
         />
       </NavbarContent>
      
@@ -49,7 +49,7 @@ export default function Navigation() {
               color={
                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
-              className="w-full mt-8 p-2 text-blue-100 text-md pl-2 border-2 border-blue-900 bg-blue-600 opacity-100 rounded-br-3xl hover:opacity-100 rounded-t-lg rounded-bl-md font-monument-extended"
+              className="w-full mt-8 p-2 text-blue-100 text-md pl-2 border-2 border-blue-900 bg-blue-600 opacity-100 rounded-br-3xl rounded-t-lg rounded-bl-md font-monument-extended"
               href="#"
               size="lg"
             >

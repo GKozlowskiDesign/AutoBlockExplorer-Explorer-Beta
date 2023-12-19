@@ -4,7 +4,7 @@ import Image from "next/image";
 const X2Earn = () => {
 // Render the About component
 return (
-<div className="w-full bg-gradient-to-b from-gray-900 via-gray-950 to-black grid grid-cols-1 md:grid-cols-2 p-10 md:p-20">
+<div className="w-full bg-gradient-to-b from-gray-900 via-black to-gray-950 grid grid-cols-1 md:grid-cols-2 p-10 md:p-20">
     <div className="mb-4 md:mb-40 w-full p-2 md:p-6 mx-auto grid grid-cols-1 bg-transparent rounded-3xl border-2  border-blue-400 shadow-2xl shadow-blue-900">
             <div className="cols-span-1 mx-auto justify-center flex">
             <Image src="/assets/Earn.png"

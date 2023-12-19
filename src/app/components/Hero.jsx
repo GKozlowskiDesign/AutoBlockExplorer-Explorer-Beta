@@ -15,10 +15,12 @@ const Hero = () => {
     <div
       name="hero"
       className="grid grid-cols-1 items-center  h-max md:h-max  justify-center"
-    >
+    >        <h1 className="text-2xl md:text-5xl text-white font-monument-extended z-0 absolute mx-auto justify-center flex p-12 md:p-40">AutoBlockExplorer</h1>
+
       {/* Mobile view */}
       <div className="mx-auto justify-center flex">
       <div className="cols-span-1">
+        
       <video
           autoPlay
           ref={vidRef}
@@ -37,7 +39,9 @@ const Hero = () => {
           src={"/WinterDriving.mp4"}
           className="opacity-100 z-0 md:w-full  hidden md:block"
         />
+        
       </div>
+
       </div>
     </div>
   );

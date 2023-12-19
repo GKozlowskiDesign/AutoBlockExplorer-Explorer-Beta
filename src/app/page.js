@@ -46,7 +46,6 @@ export default function Home() {
             <Modal />
             <About />
             <X2Earn />
-            <Spline />
             <Footer />
           </div>
         </>
